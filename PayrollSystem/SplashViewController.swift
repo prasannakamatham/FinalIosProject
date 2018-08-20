@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SplashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @objc func showNavController()
     {
         print("hello")
-        performSegue(withIdentifier: "LoginScreen", sender: self)
+        performSegue(withIdentifier: "ToLogin", sender: self)
     }
 
     override func didReceiveMemoryWarning() {

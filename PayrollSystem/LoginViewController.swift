@@ -12,6 +12,10 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    
+    @IBAction func RememberMe(_ sender: UISwitch) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,7 +31,7 @@ class LoginViewController: UIViewController {
     {
         if(txtUsername.text == "admin@gmail.com" && txtPassword.text == "secret")
         {
-            performSegue(withIdentifier:"Homevc", sender: self)
+            performSegue(withIdentifier:"HomeVC", sender: self)
             print("Valid")
         }
         else

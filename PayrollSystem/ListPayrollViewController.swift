@@ -8,8 +8,19 @@
 
 import UIKit
 
-class ListPayrollViewController: UIViewController {
-
+class ListPayrollViewController: UIViewController
+{
+    
+    @IBOutlet weak var empId: UILabel!
+    @IBOutlet weak var empName: UILabel!
+    @IBOutlet weak var empAge: UILabel!
+    @IBOutlet weak var Make: UILabel!
+    @IBOutlet weak var Plate: UILabel!
+    @IBOutlet weak var Salary: UILabel!
+    @IBOutlet weak var Bonus: UILabel!
+    @IBOutlet weak var HoursWorked: UILabel!
+    @IBOutlet weak var SchoolName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

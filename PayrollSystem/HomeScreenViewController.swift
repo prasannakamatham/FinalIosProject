@@ -20,8 +20,19 @@ class HomeScreenViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func Date(_ sender: UIDatePicker) {
+    }
     
-
+    @IBAction func btnCancel(_ sender: UIBarButtonItem) {
+    }
+    
+    @IBAction func btnAddEmployee(_ sender: UIButton)
+    {
+        performSegue(withIdentifier:"AddEmployeeVC", sender: self)
+    }
+    
+    @IBAction func btnList(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
